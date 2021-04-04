@@ -67,7 +67,7 @@ install_ROS2_dashing(){
     libcunit1-dev
 
     #path setting
-    echo "source /opt/ros/melodic/setup.bash" >> .bashrc
+    echo "source /opt/ros/dashing/setup.bash" >> .bashrc
 }
 
 # Install Cartographer
