@@ -13,20 +13,16 @@ install_ROS2_dashing(){
     locale  # verify settings
 
     # first authorize our GPG key with apt 
-    echo "[Setup Sources]"
     sudo apt update && sudo apt install curl gnupg2 lsb-release
     curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
 
     # add the repository to your sources list
     sudo sh -c 'echo "deb [arch=$(dpkg --print-architecture)] http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" > /etc/apt/sources.list.d/ros2-latest.list'
 
-    echo "[Update the package]"
     sudo apt update
 
-    echo "[Installing ROS and ROS Packages]"
     sudo apt install -y ros-dashing-desktop
 
-    echo "[Environment setup]"
     source /opt/ros/dashing/setup.bash
 
     #Install development tools and  ROS tools
@@ -67,7 +63,7 @@ install_ROS2_dashing(){
     libcunit1-dev
 
     #path setting
-    echo "source /opt/ros/dashing/setup.bash" >> .bashrc
+    echo "source /opt/ros/dashing/setup.bash" >> ~/.bashrc
 }
 
 # Install Cartographer
