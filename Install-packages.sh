@@ -1,4 +1,4 @@
-# Copyright 2020 Abudori Lab.
+# Copyright 2021 Abudori Lab.
 #
 #    Licensed under the Apache License, Version 2.0 (the "License");
 #    you may not use this file except in compliance with the License.
@@ -14,13 +14,29 @@
 
 
 #!/bin/bash
-# Reference sites
-# https://github.com/ros2/ros2_documentation/tree/dashing
-# https://github.com/ROBOTIS-GIT/emanual
+# References 
+#
+# ROS2_dashing
+# Resource name is ros2_documenttation
+# Reference site: https://github.com/ros2/ros2_documentation/tree/dashing
+# Installation manual and builidng ROS 2 are provided by CC BY4.0
+# Link: https://github.com/ros2/ros2_documentation/blob/dashing/LICENSE
+# Author: Jan Holthuis
+# © Copyright 2021, Open Robotics. 
+# Attention: some has been changed. Specifically, the toosl and packages have been added.
+
+# Turtlebot3
+# Resource name is ROBOTIS e-Manual
+# Reference site: https://github.com/ROBOTIS-GIT/emanual
+# Installation manual is provided by MIT License
+# Link: https://github.com/ROBOTIS-GIT/emanual/blob/master/LICENSE.txt
+# © 2021 ROBOTIS. Powered by Jekyll & Minimal Mistakes.
+# 
 # https://github.com/ros-planning/navigation.ros.org
 # http://gazebosim.org/tutorials?tut=install_ubuntu&cat=install
 # https://github.com/ros2/rosbag2
 # https://github.com/cartographer-project/cartographer
+
 
 # ROS2_dashing
 install_ROS2_dashing(){
@@ -135,8 +151,6 @@ install_ro2bag(){
     apt-get install ros-dashing-rosbag2-storage-default-plugins ros-dashing-ros2bag
     sudo apt-get install ros-dashing-ros2bag ros-dashing-rosbag2-transport
 }
-
-#Install RPLidar
 
 
 #main
