@@ -11,10 +11,9 @@
 #    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #    See the License for the specific language governing permissions and
 #    limitations under the License.
-
-
-#!/bin/bash
-# References 
+#
+#
+# 【References】 
 #
 # ROS2_dashing
 # Resource name is ros2_documenttation
@@ -22,22 +21,27 @@
 # Installation manual and builidng ROS 2 are provided by CC BY4.0
 # Link: https://github.com/ros2/ros2_documentation/blob/dashing/LICENSE
 # Author: Jan Holthuis
+# link: https://docs.ros.org/en/dashing/Installation.html
 # © Copyright 2021, Open Robotics. 
 # Attention: some has been changed. Specifically, the toosl and packages have been added.
-
+#
 # Turtlebot3
 # Resource name is ROBOTIS e-Manual
 # Reference site: https://github.com/ROBOTIS-GIT/emanual
-# Installation manual is provided by MIT License
-# Link: https://github.com/ROBOTIS-GIT/emanual/blob/master/LICENSE.txt
+# e-manual is provided by MIT License
+# Link: https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/#pc-setup
 # © 2021 ROBOTIS. Powered by Jekyll & Minimal Mistakes.
-# 
-# https://github.com/ros-planning/navigation.ros.org
-# http://gazebosim.org/tutorials?tut=install_ubuntu&cat=install
-# https://github.com/ros2/rosbag2
-# https://github.com/cartographer-project/cartographer
+# Attention: "Install dependent Ros 2 Packages" is refered and some part has been changed.
+#
+# rosbag2 dashing
+# Resource name is rosbag2
+# Reference site: https://github.com/ros2/rosbag2/tree/dashing
+# this is provided by Apache License 2.0
+# Link: https://github.com/ros2/rosbag2/blob/dashing/LICENSE
+# Copyright 2018, Open Source Robotics Foundation, Inc. 
 
 
+#!/bin/bash
 # ROS2_dashing
 install_ROS2_dashing(){
     echo "Installing ROS2 dashing..."
@@ -148,8 +152,7 @@ install_Turtlebot3(){
 #Install ros2bag
 install_ro2bag(){
     echo "Installing ros2bag..."
-    apt-get install ros-dashing-rosbag2-storage-default-plugins ros-dashing-ros2bag
-    sudo apt-get install ros-dashing-ros2bag ros-dashing-rosbag2-transport
+    sudo apt-get install ros-dashing-ros2bag* ros-dashing-rosbag2*
 }
 
 
